@@ -23,6 +23,7 @@
     ]
   },
   "require": {
+    "php": "^7.0",
     "league/glide": "^1.2"
   }
 }
