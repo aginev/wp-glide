@@ -1,6 +1,11 @@
 {
   "name": "aginev/wp-glide",
   "description": "PHP Glide for WordPress",
+  "keywords": [
+    "aginev",
+    "php-glide-for-wordpress"
+  ],
+  "homepage": "https://aginev.com",
   "type": "library",
   "license": "MIT",
   "authors": [
