@@ -105,3 +105,7 @@ You can get Glide image base64 encoded version in your views/templates like so:
 <!-- Result: <img src="data:image/jpeg;base64..." /> -->
 ```
 
+## License
+Everything in this repository is MIT License unless otherwise specified.
+
+MIT © 2018 Atanas Ginev
