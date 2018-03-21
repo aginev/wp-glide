@@ -1,0 +1,23 @@
+{
+  "name": "aginev/wp-glide",
+  "description": "PHP Glide for WordPress",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Atanas Ginev",
+      "email": "atanas.ginev@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "WpGlide\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "require": {
+    "league/glide": "^1.2"
+  }
+}
