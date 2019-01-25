@@ -192,7 +192,7 @@ class WpGlide
 
         $relativeUrl = $this->baseUrl . "{$slug}/" . $this->relativeUploadUrl($url);
 
-        return self::removeUrlProtocol(site_url($relativeUrl));
+        return self::removeUrlProtocol(network_site_url($relativeUrl));
     }
 
     /**
@@ -310,6 +310,10 @@ class WpGlide
     public function relativeUploadUrl(string $url)
     {
         $uploadsBaseUrl = wp_upload_dir()['baseurl'];
+
+        if (is_multisite()) {
+            $uploadsBaseUrl = rtrim(str_replace('/sites/'.get_current_blog_id(), '', $uploadsBaseUrl), '/');
+        }
 
         return ltrim(str_replace($uploadsBaseUrl, '', $url), '/');
     }
